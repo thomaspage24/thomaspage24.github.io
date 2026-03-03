@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thomas Page</title>
+    <meta
+      name="description"
+      content="Hi! I'm Thomas, this is my portfolio, inspired by Counter-Strike 1.6."
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/ekmas/cs16.css@main/css/cs16.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="hero reveal" data-reveal>
+        <div class="hero__scanline"></div>
+        <div class="hero__radar" aria-hidden="true"></div>
+        <p class="hero__eyebrow">PERSONAL FILE // COUNTER-STRIKE 1.6 INTERFACE</p>
+        <div class="hero__title-row">
+          <div>
+            <h1>THOMAS PAGE</h1>
+            <p class="hero__subtitle">
+              Software Engineer and Cybersecurity Enthusiast.
+            </p>
+          </div>
+          <div class="hero__actions">
+            <button class="cs-btn hero__link-btn" id="hero-contact-button" type="button">CONTACT</button>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-grid">
+        <aside class="sidebar">
+          <section class="panel reveal" data-reveal>
+            <div class="panel__header">
+              <span>PLAYER STATS</span>
+            </div>
+            <div class="panel__body">
+              <div class="stat">
+                <div class="stat__meta">
+                  <span>Coding</span>
+                  <span class="stat__value">85%</span>
+                </div>
+                <div class="cs-progress-bar">
+                  <div class="bars" data-width="85" data-min="18" data-max="96" style="width: 0%"></div>
+                </div>
+              </div>
+              <div class="stat">
+                <div class="stat__meta">
+                  <span>:O</span>
+                  <span class="stat__value">82%</span>
+                </div>
+                <div class="cs-progress-bar">
+                  <div class="bars" data-width="82" data-min="12" data-max="93" style="width: 0%"></div>
+                </div>
+              </div>
+              <div class="stat">
+                <div class="stat__meta">
+                  <span>:P</span>
+                  <span class="stat__value">88%</span>
+                </div>
+                <div class="cs-progress-bar">
+                  <div class="bars" data-width="88" data-min="8" data-max="98" style="width: 0%"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel reveal" data-reveal>
+            <div class="panel__header">
+              <span>LOADOUT | PROFICIENCIES</span>
+            </div>
+            <div class="panel__body skill-groups">
+              <section class="skill-group">
+                <h3 class="skill-group__title">Frontend</h3>
+                <div class="tag-list">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>React</span>
+                </div>
+              </section>
+              <section class="skill-group">
+                <h3 class="skill-group__title">Backend</h3>
+                <div class="tag-list">
+                  <span>Python</span>
+                  <span>Java + OOP</span>
+                  <span>C</span>
+                  <span>C++</span>
+                </div>
+              </section>
+              <section class="skill-group">
+                <h3 class="skill-group__title">Databases</h3>
+                <div class="tag-list">
+                  <span>SQL</span>
+                </div>
+              </section>
+              <section class="skill-group">
+                <h3 class="skill-group__title">Tools & Platforms</h3>
+                <div class="tag-list">
+                  <span>Git</span>
+                  <span>Docker</span>
+                  <span>Linux</span>
+                  <span>Kali</span>
+                  <span>Autopsy</span>
+                </div>
+              </section>
+            </div>
+          </section>
+
+        </aside>
+
+        <div class="main-column">
+          <section class="content panel reveal" data-reveal>
+            <div class="panel__header">
+              <span>SERVER BROWSER</span>
+            </div>
+            <div class="panel__body">
+              <div class="cs-tabs">
+              <input
+                class="radiotab"
+                name="tabs"
+                tabindex="1"
+                type="radio"
+                id="tab-about"
+                checked="checked"
+              />
+              <label class="label" for="tab-about">ABOUT</label>
+              <div class="panel tab-panel" tabindex="1" data-tab-panel>
+                <h2>Player Profile</h2>
+                <p>
+                  I am a computer science student @ UTS majoring in Cybersecurity and privacy.
+                </p>
+                <div class="info-grid">
+                  <div>
+                    <span class="info-grid__label">Studying</span>
+                    <strong>Computer science (Majoring in Cybersecurity and Privacy) </strong>
+                  </div>
+                  <div>
+                    <span class="info-grid__label">Interests</span>
+                    <strong>Cybersecurity, Linux, Networking, Coding, and Hardware</strong>
+                  </div>
+                  <div>
+                    <span class="info-grid__label">Goal</span>
+                    <strong>Grow through passion driven projects</strong>
+                  </div>
+                  <div>
+                    <span class="info-grid__label">Site purpose</span>
+                    <strong>Showcase projects, skills, facts, and hobbies</strong>
+                  </div>
+                </div>
+              </div>
+
+              <input
+                class="radiotab"
+                tabindex="1"
+                name="tabs"
+                type="radio"
+                id="tab-projects"
+              />
+              <label class="label" for="tab-projects">PROJECTS</label>
+              <div class="panel tab-panel" tabindex="1" data-tab-panel>
+                <h2>Project Showcase</h2>
+                <div class="server-table">
+                  <div class="server-table__head">
+                    <span>PROJECT</span>
+                    <span>STACK</span>
+                    <span>STATUS</span>
+                  </div>
+                  <article class="server-row server-row--table">
+                    <div class="server-row__project">
+                      <strong>Portfolio Site</strong>
+                      <p>Static personal site with a Counter-Strike 1.6 inspired interface.</p>
+                    </div>
+                    <span class="server-row__stack">HTML / CSS</span>
+                    <span class="server-row__status">LIVE</span>
+                  </article>
+                  <article class="server-row server-row--table">
+                    <div class="server-row__project">
+                      <strong>Pomodoro Timer</strong>
+                      <p>Simple app that helps me plan my study blocks.</p>
+                    </div>
+                    <span class="server-row__stack">HTML/CSS/TAURI/VITE</span>
+                    <span class="server-row__status">BUILT</span>
+                  </article>
+                  <article class="server-row server-row--table">
+                    <div class="server-row__project">
+                      <strong>Sports Team Manager Panel</strong>
+                      <p>Object-Oriented Java programmed, manager panel for a sports team.</p>
+                    </div>
+                    <span class="server-row__stack">Java + JavaFX</span>
+                    <span class="server-row__status">BUILT</span>
+                  </article>
+                </div>
+              </div>
+
+              <input
+                class="radiotab"
+                tabindex="1"
+                name="tabs"
+                type="radio"
+                id="tab-skills"
+              />
+              <label class="label" for="tab-skills">SKILLS</label>
+              <div class="panel tab-panel" tabindex="1" data-tab-panel>
+                <h2>Technical Skills</h2>
+                <div class="info-grid">
+                  <div>
+                    <span class="info-grid__label">Languages</span>
+                    <strong>JavaScript, TypeScript, Python, Java</strong>
+                  </div>
+                  <div>
+                    <span class="info-grid__label">Frontend</span>
+                    <strong>HTML, CSS, React, responsive design</strong>
+                  </div>
+                  <div>
+                    <span class="info-grid__label">Tools</span>
+                    <strong>Git, Linux, Autopsy, Wireshark</strong>
+                  </div>
+                  <div>
+                    <span class="info-grid__label">Core strengths</span>
+                    <strong>Debugging, iteration, driven self-directed learning</strong>
+                  </div>
+                </div>
+              </div>
+
+              <input
+                class="radiotab"
+                tabindex="1"
+                name="tabs"
+                type="radio"
+                id="tab-hobbies"
+              />
+              <label class="label" for="tab-hobbies">HOBBIES</label>
+              <div class="panel tab-panel" tabindex="1" data-tab-panel>
+                <h2>Outside of tech</h2>
+                <div class="info-grid">
+                  <div>
+                    <span class="info-grid__label">Cameras <3 </span>
+                    <strong>Photography, videography, editing</strong>
+                  </div>
+                  <div>
+                    <span class="info-grid__label">Hardware</span>
+                    <strong>Home labbing, computer building, raspberry pi's</strong>
+                  </div>
+                  <div>
+                    <span class="info-grid__label">Creative side</span>
+                    <strong>Design details, interface aesthetics, and presentation</strong>
+                  </div>
+                  <div>
+                    <span class="info-grid__label">Taekwondo</span>
+                    <strong>I love to train taekwondo @ utstkd </strong>
+                  </div>
+                </div>
+              </div>
+
+              <input
+                class="radiotab"
+                tabindex="1"
+                name="tabs"
+                type="radio"
+                id="tab-contact"
+              />
+              <label class="label" for="tab-contact">CONTACT</label>
+              <div class="panel tab-panel" tabindex="1" data-tab-panel>
+                <h2 id="contact">Contact Links</h2>
+                <div class="contact-links">
+                  <button class="contact-card cs-btn" id="open-email-dialog" type="button">EMAIL</button>
+                  <a class="contact-card cs-btn" href="https://github.com/thomaspage24">GITHUB</a>
+                  <a class="contact-card cs-btn" href="https://www.linkedin.com/in/yourusername/">LINKEDIN</a>
+                </div>
+                <div class="contact-copy">
+                  <p>
+                    Use the email button to view my address directly, or visit my profiles above ^.
+                  </p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel reveal" data-reveal>
+            <div class="panel__header">
+              <span>RADIO</span>
+            </div>
+            <div class="panel__body radio-copy">
+              <p>
+               I made this site to test out a css library.
+              </p>
+              <hr class="cs-hr" />
+              <p>:)</p>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer-bar">
+        <span>MAP: STUDENT_PORTFOLIO</span>
+        <span>MODE: STATIC DEPLOY</span>
+        <span>HOST: GITHUB PAGES</span>
+      </footer>
+    </div>
+
+    <dialog class="cs-dialog briefing-dialog" id="briefing-dialog">
+      <form method="dialog">
+        <div class="heading">
+          <div class="wrapper">
+            <div class="icon"></div>
+            <p class="text">Mission Briefing</p>
+          </div>
+          <button class="cs-btn close" aria-label="Close dialog"></button>
+        </div>
+        <div class="content">
+          <p>
+            Replace the placeholder project entries, facts, hobbies, and profile
+            links with your real content as you build out your portfolio.
+          </p>
+        </div>
+        <menu class="footer-btns">
+          <button class="cs-btn">CLOSE</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <dialog class="cs-dialog briefing-dialog" id="email-dialog">
+      <form method="dialog">
+        <div class="heading">
+          <div class="wrapper">
+            <div class="icon"></div>
+            <p class="text">Email Contact</p>
+          </div>
+          <button class="cs-btn close" aria-label="Close dialog"></button>
+        </div>
+        <div class="content">
+          <div class="email-dialog__row">
+            <p>Email: <strong id="email-address">tblpage24@gmail.com</strong></p>
+            <button class="cs-btn" id="copy-email-button" type="button">COPY</button>
+          </div>
+          <p class="email-dialog__status" id="copy-email-status" aria-live="polite"></p>
+        </div>
+        <menu class="footer-btns">
+          <button class="cs-btn">CLOSE</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <script>
+      const briefingButton = document.getElementById("open-briefing");
+      const briefingDialog = document.getElementById("briefing-dialog");
+      const emailButton = document.getElementById("open-email-dialog");
+      const emailDialog = document.getElementById("email-dialog");
+      const heroContactButton = document.getElementById("hero-contact-button");
+      const contactTabInput = document.getElementById("tab-contact");
+      const serverBrowserPanel = document.querySelector(".content.panel");
+      const copyEmailButton = document.getElementById("copy-email-button");
+      const copyEmailStatus = document.getElementById("copy-email-status");
+      const revealItems = document.querySelectorAll("[data-reveal]");
+      const progressBars = document.querySelectorAll(".bars[data-width]");
+      const tabInputs = document.querySelectorAll(".cs-tabs .radiotab");
+      const tabPanels = document.querySelectorAll("[data-tab-panel]");
+
+      if (briefingButton && briefingDialog) {
+        briefingButton.addEventListener("click", () => {
+          briefingDialog.showModal();
+        });
+      }
+
+      if (emailButton && emailDialog) {
+        emailButton.addEventListener("click", () => {
+          if (copyEmailStatus) {
+            copyEmailStatus.textContent = "";
+          }
+          emailDialog.showModal();
+        });
+      }
+
+      if (copyEmailButton) {
+        copyEmailButton.addEventListener("click", async () => {
+          try {
+            await navigator.clipboard.writeText("tblpage24@gmail.com");
+            if (copyEmailStatus) {
+              copyEmailStatus.textContent = "Copied to clipboard.";
+            }
+          } catch (error) {
+            if (copyEmailStatus) {
+              copyEmailStatus.textContent = "Copy failed. Please copy manually.";
+            }
+          }
+        });
+      }
+
+      if ("IntersectionObserver" in window) {
+        const revealObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) {
+                return;
+              }
+
+              entry.target.classList.add("is-visible");
+              revealObserver.unobserve(entry.target);
+            });
+          },
+          { threshold: 0.18 }
+        );
+
+        revealItems.forEach((item, index) => {
+          item.style.setProperty("--reveal-delay", `${index * 90}ms`);
+          revealObserver.observe(item);
+        });
+
+      } else {
+        revealItems.forEach((item) => item.classList.add("is-visible"));
+      }
+
+      const updateStatBar = (bar) => {
+        const min = Number.parseInt(bar.dataset.min ?? "70", 10);
+        const max = Number.parseInt(bar.dataset.max ?? "95", 10);
+        const nextValue = Math.floor(Math.random() * (max - min + 1)) + min;
+        const valueLabel = bar.closest(".stat")?.querySelector(".stat__value");
+
+        bar.style.width = `${nextValue}%`;
+
+        if (valueLabel) {
+          valueLabel.textContent = `${nextValue}%`;
+        }
+      };
+
+      progressBars.forEach((bar, index) => {
+        const initialWidth = bar.getAttribute("data-width") ?? "0";
+        bar.style.width = `${initialWidth}%`;
+
+        window.setTimeout(() => {
+          updateStatBar(bar);
+
+          window.setInterval(() => {
+            updateStatBar(bar);
+          }, 1250 + index * 180);
+        }, 500 + index * 220);
+      });
+
+      const activateCheckedTab = () => {
+        tabPanels.forEach((panel) => panel.classList.remove("is-active"));
+
+        tabInputs.forEach((input) => {
+          if (!input.checked) {
+            return;
+          }
+
+          const panel = input.nextElementSibling?.nextElementSibling;
+          if (panel) {
+            panel.classList.add("is-active");
+          }
+        });
+      };
+
+      tabInputs.forEach((input) => {
+        input.addEventListener("change", activateCheckedTab);
+      });
+
+      activateCheckedTab();
+
+      if (heroContactButton && contactTabInput) {
+        heroContactButton.addEventListener("click", () => {
+          contactTabInput.checked = true;
+          activateCheckedTab();
+          contactTabInput.dispatchEvent(new Event("change", { bubbles: true }));
+          serverBrowserPanel?.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      }
+    </script>
+  </body>
+</html>
